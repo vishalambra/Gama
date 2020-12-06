@@ -1,0 +1,102 @@
+.logo{
+    background-image: linear-gradient(273deg, #27AAE2 0%, #1e3e73 100%);
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    img{
+        width: 189.2px;
+        height: 50px;
+        object-fit: contain;
+    }
+}
+.table-container{
+    margin: 30px 150px 0;
+    padding: 30px 30px 247px;
+    background-color: #ffffff;
+    .name-div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .work-exp{
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: #293031;
+        }
+        .name{
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: right;
+            color: #286aa6;
+        }
+    }
+}
+table {
+    border-collapse: collapse;
+    padding: 21px 20px 20px;
+    border: solid 1px #e6e6e6;
+    th{
+        background: #efefef;
+    }
+    th {
+        padding: 10px;
+        text-align: left;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #4c4c4c;
+    }
+    td{
+        margin: 0 99px 38px 0;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        padding: 10px;
+        text-align: left;
+        line-height: 1.29;
+        color: #4c4c4c;
+    }
+  }
+.add-button{
+    width: 50px;
+    margin: 15px 907px 0 0;
+    padding: 7px 16px;
+    border: solid 1px #23c994;
+    background-color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #23c994;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+@media only screen and (max-width: 425px) {
+    .table-container{
+        margin: 8px !important;
+        padding: 0px !important;
+    }
+}

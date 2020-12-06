@@ -1,0 +1,87 @@
+.already-account{
+    margin: 122px 10px 0 1px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #8c949c;
+}
+
+.login-container{
+    max-width: 390px;
+    padding: 10px;
+    /* padding: 50px 69px 51px; */
+    .parent-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-up-container{
+        display: flex;
+        flex-direction: column;
+        .heading{  
+            margin: 0 41px 51px 13px;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.67;
+            letter-spacing: 5px;
+            text-align: center;
+            color: #343534;
+        }
+        .form-col{
+            padding: 8px 0;
+            display: flex;
+            flex-direction: column;
+            label{
+                font-family: Roboto;
+                font-size: 10px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #8c949c;
+            }
+            input{
+                padding: 5px 0;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid;
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+            }
+            input[type=text]{
+                color: #286aa6;
+                border-bottom: solid 1px #345a99;
+            }
+        }
+    }
+    .sign-in{
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #23c994;
+        padding: 9px 24.5px 8px;
+        width: 50px;
+        border: solid 1px #23c994;
+        background-color: #ffffff;
+        margin-top: 15px;   
+        cursor: pointer;
+        display: flex;          
+    }
+}

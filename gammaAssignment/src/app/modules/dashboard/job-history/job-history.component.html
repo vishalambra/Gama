@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="logo">
+        <img src="assets/images/dashboardLogo.png" alt="logo">
+    </div>
+    <div class="table-container">
+        <div class="name-div">
+            <p class="work-exp">WORK EXPERIENCE</p>
+            <p class="name" *ngIf="userName">{{userName}}</p>
+        </div>
+        <div>
+            <table style="width:100%">
+                <tr>
+                  <th>Company</th>
+                  <th>Title</th>
+                  <th>Location</th>
+                  <th>Month/Year - Month/Year</th>
+                  <th>Description</th>
+                </tr>
+                <tr *ngFor="let userExp of userExpArray">
+                    <td>{{userExp.company_name}}</td>
+                    <td>{{userExp.title}}</td>
+                    <td>{{userExp.location}}</td>
+                    <td>{{userExp.start_date}}</td>
+                    <td>{{userExp.description}}</td>
+                </tr>
+            </table>
+        </div>
+        <span class="add-button" (click)="addUserExperiance()">
+            <img src="assets/images/addButton.svg" alt="add button"> Add
+        </span>
+    </div>
+</div>

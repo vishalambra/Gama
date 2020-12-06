@@ -1,0 +1,33 @@
+<div class="container">
+    <span class="logo-image"><img src="assets/images/log.png" alt="logo-image"></span>
+    <div class="login-container">
+        <div class="sign-up-container">
+            <span  class="heading">SIGN UP & GET STARTED</span>
+            <form [formGroup]="signUpform">
+                <div class="parent-div">
+                    <div class="sign-up-form-container">
+                        <div class="form-col">
+                            <label>Email</label>
+                            <input type="email" formControlName="email">
+                        </div>
+                        <div class="form-col">
+                            <label>Name</label>
+                            <input type="text" formControlName="name">
+                        </div>
+                        <div class="form-col">
+                            <label>Password</label>
+                            <input type="password" formControlName="password">
+                        </div>
+                        <span class="sign-in" (click)="signUp()">SIGN UP</span>
+                    </div>
+                </div>
+            </form>
+            <div class="already-account">
+                Already have an account?<span class="sign-up" [routerLink]="['/onboard/login']">SIGN IN</span>
+            </div>
+        </div>
+        <div class="login-image">
+            <img src="assets/images/login.png" alt="login-image">
+        </div>
+    </div>
+</div>

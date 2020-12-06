@@ -1,0 +1,31 @@
+<div class="container">
+    <span class="logo-image"><img src="assets/images/log.png" alt="logo-image"></span>
+    <div class="login-container">
+        <div class="login-form">
+            <form class="" [formGroup]="loginForm">
+                <div class="parent-div">
+                    <span class="heading">HAVE AN ACCOUNT?</span>
+                    <span class="heading mg-bt">JUST SIGN IN!</span>
+                    <div class="login-form-container">
+                        <div class="form-col">
+                            <label>Email</label>
+                            <input type="email" formControlName="email">
+                        </div>
+                        <div class="form-col">
+                            <label>Password</label>
+                            <input type="password" formControlName="password">
+                        </div>
+                        <span class="sign-in" (click)="login()">SIGN IN</span>
+                    </div>
+                </div>
+            </form>
+            <div class="Dont-have-an-accoun">
+                <ng-container>Don’t have an account?</ng-container>
+                <span class="sign-up" [routerLink]="['/onboard/sign-up']" >SIGN UP</span>
+            </div>
+        </div>
+        <div class="login-image">
+            <img src="assets/images/login.png" alt="login-image">
+        </div>
+    </div>
+</div>
